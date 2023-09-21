@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Home{% endblock title %}
 
@@ -12,5 +13,43 @@
     </div>
 </section>
 <!-- End Hero -->
+
+
+<!-- ======= Main ======= -->
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{% static "img/about.jpg" %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>We are a team of dedicated personnel with the objectve of revolutionizing the tech industry.</h3>
+            <p class="fst-italic">
+              With over a decade of experience in the software industry, we are a leading example of 'growth with goal'
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Recognized by international standard organizations.</li>
+              <li><i class="bi bi-check-circle"></i> Delivering software solutions to over 100+ companies globally.</li>
+              <li><i class="bi bi-check-circle"></i> Deliver the best possible outcomes to our clients through understanding their situation and goal in the coming years and helping them achieve it through our dedication and constant effort.</li>
+            </ul>
+            <p>
+              We would be your best partner in tech industry if you want to have an advantage over your competitors
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    
+
+</main>
+<!-- End #main -->
 
 {% endblock content %}

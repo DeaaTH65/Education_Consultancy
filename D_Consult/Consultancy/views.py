@@ -16,6 +16,10 @@ def courses(request):
     return render(request, 'courses.html')
 
 
+def trainers(request):
+    return render(request, 'trainers.html')
+
+
 def contact(request):
     if request.method == 'POST':
         form = MessageForm(request.POST)

@@ -20,6 +20,10 @@ def trainers(request):
     return render(request, 'trainers.html')
 
 
+def events(request):
+    return render(request, 'events.html')
+
+
 def contact(request):
     if request.method == 'POST':
         form = MessageForm(request.POST)

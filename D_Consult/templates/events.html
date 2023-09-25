@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Courses{% endblock title %}
+
+
+{% block content %}
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs" data-aos="fade-in">
+    <div class="container">
+      <h2>Events</h2>
+      <p>These are our upcoming events. You can participate in these events simply by registering for them. It is free of cost and you will gain a lot of knowledge and value from participating. Also for bonus, you will get participation certificate at the end. </p>
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
+
+  <!-- ======= Events Section ======= -->
+  <section id="events" class="events">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="card">
+            <div class="card-img">
+              <img src="{% static "img/events-1.jpg" %}" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
+              <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
+              <p class="card-text">Web design is the art and science of creating visually appealing and user-friendly websites. It involves various aspects, including visual design, user interface and experience design, coding, content creation, and ensuring accessibility and SEO. Web designers use their skills to craft websites that are not only aesthetically pleasing but also functional and easy to navigate. In today's digital age, a well-designed website is essential for businesses and individuals to establish a strong online presence and engage with audience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="card">
+            <div class="card-img">
+              <img src="{% static "img/events-2.jpg" %}" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+              <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
+              <p class="card-text">Marketing strategies are the blueprint businesses use to connect with their target audience and achieve their goals. They encompass understanding your audience, creating valuable content, leveraging social media, optimizing for search engines, and using paid advertising when necessary. Effective marketing strategies are vital for boosting brand visibility, attracting customers, and driving revenue in today's competitive market.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Events Section -->
+
+</main>
+
+{% endblock content %}

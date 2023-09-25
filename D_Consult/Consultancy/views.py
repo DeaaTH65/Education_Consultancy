@@ -24,6 +24,10 @@ def events(request):
     return render(request, 'events.html')
 
 
+def pricing(request):
+    return render(request, 'pricing.html')
+
+
 def contact(request):
     if request.method == 'POST':
         form = MessageForm(request.POST)
